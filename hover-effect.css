@@ -1,0 +1,42 @@
+.hou{
+	height:170px;
+	width:170px;
+	margin:0 auto;
+	border-radius:50%;
+	overflow:hidden;
+	position:relative;
+}
+.qian{
+	position:absolute;
+	top:85px;
+	left:85px;
+	height:0px;
+	width:0px;
+	border-radius:50%;
+	z-index:2;
+	background:rgba(0,0,0,0.5);
+	
+	
+	
+}
+.wenzi{
+	position:absolute;
+	top:80px;
+	left:60px;
+	z-index:4;
+	
+	font-weight:bold;
+	color:white;
+	opacity:0;
+}
+.hou:hover .qian{
+	transition: 2s;
+	top:0px;
+	left:0px;
+	height:170px;
+	width:170px;
+}
+.hou:hover .wenzi{
+	transition: 1.3s;
+	opacity:1;
+}
